@@ -10,7 +10,7 @@ const userRouter = require('./routes/user');
 
 
 //INIT
-const PORT = 3000;
+const PORT = 3000 || process.env.PORT;
 const app = express();
 app.use(cors());
 app.use(express.json());
